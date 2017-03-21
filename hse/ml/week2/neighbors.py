@@ -32,7 +32,7 @@ def best_knn_number(X, y, scaling=False, max_neighbor=50, min_neighbor=1):
 
 if __name__ == '__main__':
 
-    data = pandas.read_csv('wine.data')
+    data = pandas.read_csv('./data/wine.data')
     data.columns = range(1, 15)
     y = data[1]
     X = data[range(2, 15)]
