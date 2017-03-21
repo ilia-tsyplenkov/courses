@@ -20,10 +20,10 @@ def calculate_quality(X_train, y_train, X_test, y_test):
     return accuracy_score(y_test, clf.predict(X_test))
 
 
-train_data = pandas.read_csv('perceptron-train.csv',
+train_data = pandas.read_csv('./data/perceptron-train.csv',
                              index_col=None,
                              header=None)
-test_data = pandas.read_csv('perceptron-test.csv',
+test_data = pandas.read_csv('./data/perceptron-test.csv',
                             index_col=None,
                             header=None)
 
